@@ -580,4 +580,8 @@ h2 {
 #output h3 {
   color: #333;
 }
+
+@media (max-width: 600px) {
+    /* Styles for small screens */
+}
     
