@@ -546,3 +546,38 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #f1f1f1;
 }
+
+
+
+
+ /* Basic styling for the form */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+.contact-form input, .contact-form textarea, .contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+#output {
+  display: none;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+#output h3 {
+  color: #333;
+}
+    
