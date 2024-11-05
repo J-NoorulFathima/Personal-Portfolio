@@ -54,7 +54,7 @@
             <p>
           Motivated Web Developer with a strong foundation in front-end technologies including HTML, CSS, and JavaScript, consistently delivering high-quality, responsive websites. Adept at problem-solving and translating complex requirements into intuitive, user-focused solutions. Committed to continuous learning and bringing value to collaborative, results-driven teams.
             </p>
-            <a href="file:///C:/noor/Portfolio/Resume.pdf" class="btn more-about-me-btn">Resume</a>
+            <a href="Resume.pdf" class="btn more-about-me-btn">Resume</a>
             <div class="more-about hidden">
                 <p> I have a passion for building websites that makes a real impact. With a keen eye for detail and a dedication to clean, maintable code, I am constantly improving my skills in front-end and back-end development to stay up-to-date in this ever-evolving industry.</p>
             </div>
@@ -68,7 +68,7 @@
             <div class="service-icon">🔧</div>
             <h3>Front-End Development</h3>
             <p>Creating responsive and interactive user interfaces using HTML, CSS, and JavaScript to enhance user engagement.</p>
-            <a href="C:\Noorul\Portfolio\img\Personal Portfolio.png" class="btn learn-more-btn">Project 1</a>
+            <a href="https://github.com/Noorul882/Personal-Portfolio/blob/main/Personal%20Portfolio.png?raw=true" class="btn learn-more-btn">Project 1</a>
             <div class="more-info hidden">
                 <p>My Front-end development expertise includes HTML,CSS and JavaScript, with a focus on responsive design, accessibility and user experience. I am proficient in translating UI/UX designs into functional, visually appealing and intuitive web interface. With knowledge in modern libraries like React. I am skilled at enhancing engagement,optimizing load times and ensuring cross-browser compatibility.</p>
             </div>
@@ -77,9 +77,9 @@
             <div class="service-icon">🖥️</div>
             <h3>Back-End Development</h3>
             <p>Building robust server-side applications and APIs with modern frameworks to ensure seamless functionality.</p>
-            <a href="C:\Noorul\Portfolio\img\Student Grade Tracker .jpg" class="btn learn-more-btn">Project 1</a>
-            <a href="C:\Noorul\Portfolio\img\Travel Itinerary Planner .jpg" class="btn learn-more-btn">Project 2</a>
-            <a href="C:\Noorul\Portfolio\img\Hotel Reservation System .jpg" class="btn learn-more-btn">Project 3</a>
+            <a href="https://github.com/Noorul882/Personal-Portfolio/blob/main/Student%20Grade%20Tracker%20.jpg?raw=true" class="btn learn-more-btn">Project 1</a>
+            <a href="https://github.com/Noorul882/Personal-Portfolio/blob/main/Travel%20itinerary%20planner%20.jpg?raw=true" class="btn learn-more-btn">Project 2</a>
+            <a href="https://github.com/Noorul882/Personal-Portfolio/blob/main/Hotel%20Reservation%20System%20.jpg?raw=true" class="btn learn-more-btn">Project 3</a>
             <div class="more-info hidden">
                 <p>Currently advancing my Back-end development skills, with a focus on Java and server-side technologies to create secure, scalable applications. My aim is to develop expertise in API creation, database management and RESTful services. I am working towards proficiency in modern frameworks like Node.js and Express, while practicing structured data handling to ensure application integrity, security and performance.</p>
             </div>
@@ -159,22 +159,6 @@
     
     <section id="project" class="projects-section">
         <h2>Latest <span>Projects</span></h2>
-        <div class="projects-container">
-            <div class="project-card"
-                <img src="C:\noorul\Portfolio\newsletter.jpg" alt="Project 1">
-            </div>
-            <div class="project-card"
-                <img src="C:\Noorul\Portfolio\img\Student Grade Tracker .jpg" alt="Project 2">
-            </div>
-            <div class="project-card"
-                <img src="C:\noorul\Portfolio\img\Travel Itinerary Planner .jpg" alt="Project 3">
-            </div>
-            <div class="project-card"
-                <img src="C:\noorul\Portfolio\img\Hotel Reservation System .jpg" alt="Project 4">
-            </div>
-           </div>
-        </div>
-    </section>
 
     <html lang="en">
     <head>
@@ -213,7 +197,7 @@
           </a>
         </div>
       </div>
-    
+    </section>
     
       <script src="script.js"></script>
 
@@ -233,18 +217,64 @@
                     <a href="https://www.linkedin.com/in/noorulfathima-web-developer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target=""_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+
+           <div class="contact-form">
+            <style>
+                /* Basic styling for the form */
+                .contact-form {
+                    max-width: 500px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-family: Arial, sans-serif;
+                }
+                .contact-form input, .contact-form textarea, .contact-form button {
+                    width: 100%;
+                    padding: 10px;
+                    margin: 10px 0;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                }
+                .contact-form button {
+                    background-color: #4CAF50;
+                    color: white;
+                    cursor: pointer;
+                }
+                #output {
+                    display: none;
+                    margin-top: 20px;
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                }
+                #output h3 {
+                    color: #333;
+                }
+            </style>
+        </head>
+        <body>
+        
             <div class="contact-form">
-                <form action="#">
-                    <input type="text" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <input type="text" placeholder="Enter Your Subject" required>
-                    <textarea placeholder="Enter Your Message" required></textarea>
+                <form onsubmit="displayData(event)">
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    <input type="text" id="subject" placeholder="Enter Your Subject" required>
+                    <textarea id="message" placeholder="Enter Your Message" required></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
+        
+            <div id="output">
+                <h3>Submitted Data:</h3>
+                <p><strong>Name:</strong> <span id="outputName"></span></p>
+                <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+                <p><strong>Subject:</strong> <span id="outputSubject"></span></p>
+                <p><strong>Message:</strong> <span id="outputMessage"></span></p>
+            </div>
+            </div>
         </div>
-    </section>
-    
+    </section> 
+
     
     
     
