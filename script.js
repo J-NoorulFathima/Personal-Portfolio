@@ -59,3 +59,22 @@ document.querySelectorAll('.project-link').forEach(link => {
     console.log(`Opening ${link.querySelector('.project-name').innerText}`);
   });
 });
+
+function displayData(event) {
+    event.preventDefault(); // Prevents form submission and page reload
+
+    // Get the input values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // Display the input values in the output div
+    document.getElementById('outputName').innerText = name;
+    document.getElementById('outputEmail').innerText = email;
+    document.getElementById('outputSubject').innerText = subject;
+    document.getElementById('outputMessage').innerText = message;
+
+    // Show the output div
+    document.getElementById('output').style.display = 'block';
+}
