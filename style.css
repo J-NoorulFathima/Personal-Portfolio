@@ -584,4 +584,63 @@ h2 {
 @media (max-width: 600px) {
     /* Styles for small screens */
 }
-    
+
+.container {
+  margin: 100px 0 0 200px;
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container img {
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: all ease-in-out 0.5s;
+}
+
+.container img:hover {
+  width: 65%;
+}
+
+.certifications-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  margin-top: 200px;
+}
+
+.certifications-section h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.certifications-section h2 span {
+  color: #00f260; /* Highlighted color */
+}
+
+.certifications h2 {
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  font: weight;
+  margin-bottom: 20px;
+}
+
+.certifications h2 apan {
+  color: #00FFFF;
+  text-decoration underline;
+}
+
+.certifications {
+  background-color: #0d1b2a;
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+}
