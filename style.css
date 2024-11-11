@@ -635,7 +635,7 @@ h2 {
 
 .certifications h2 apan {
   color: #00FFFF;
-  text-decoration underline;
+  text-decoration: underline;
 }
 
 .certifications {
